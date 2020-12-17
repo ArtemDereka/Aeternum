@@ -396,9 +396,10 @@ header {
     .header__link_active {
         font-size: 20px;
         color: #ffffff;
-        border-bottom: #ffffff;
+        border-bottom: 1px solid #707070;
         text-decoration: none;
         font-weight: normal;
+        padding-bottom: 15px;
     }
     .display_none_Mobile {
         display: none;
@@ -437,6 +438,7 @@ header {
 .footer__item {
     font-size: 13px;
     margin-top: 7px;
+    font-weight: lighter;
 }
 
 .footer__link {
@@ -665,8 +667,9 @@ header {
 }
 
 .home__icons_text {
-    font-size: 13px;
+    font-size: 15px;
     color: #000000;
+    margin-top: 40px;
 }
 
 
@@ -680,7 +683,7 @@ header {
     background-image: url(/images/photo-1524439654840-b12734d89414.png);
     background-size: cover;
     width: 400px;
-    height: 300px;
+    height: 310px;
     position: relative;
 }
 
@@ -716,7 +719,7 @@ header {
 
 .home__content_text {
     font-size: 13px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #707070;
     margin-top: 70px;
 }
@@ -1886,7 +1889,7 @@ header {
 
 .active__ownership_text {
     font-size: 12.5px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #595B60;
     margin-top: 95px;
     width: 295px;
@@ -1957,9 +1960,21 @@ header {
     width: 280px;
 }
 
+.nineteenPx {
+    margin-left: 16px;
+}
+
+.minus59Px {
+    margin-right: -59px;
+}
+
+.minus16Px {
+    margin-right: -16px;
+}
+
 .active__philosophy_text {
     font-size: 12.5px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #595B60;
     margin-top: 80px;
 }
@@ -2003,7 +2018,7 @@ header {
 
 .active__board_text {
     font-size: 12.5px;
-    line-height: 1.3;
+    line-height: 1.4;
     color: #707070;
     margin-top: 65px;
 }
@@ -2048,6 +2063,11 @@ header {
 
 .active__focus {
     background-color: #EEECEA;
+    padding: 50px 0 110px 0;
+}
+
+.active__focusPrivat {
+    background-color: #F3E8DE;
     padding: 50px 0 110px 0;
 }
 
@@ -2130,6 +2150,10 @@ header {
     .active__philosophy_name {
         font-size: 35px; ;
         width: 280px;
+    }
+
+    .nineteenPx {
+        margin-left: 0;
     }
     
     .active__philosophy_text {
@@ -2625,7 +2649,7 @@ header {
 
 .team__about_name {
     color: #2B2E34;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .team__about_holder {
@@ -2662,24 +2686,24 @@ header {
     background-color: #2B2E34;
     position: absolute;
     bottom: 0;
-    right: -30px;
+    right: -15px;
 }
 
 .team__person_img_holder {
     position: relative;
-    height: 260px;
+    height: 240px;
 }
 
 .team__person_img {
-    width: 292px;
-    height: 260px;
+    width: 250px;
+    height: 240px;
 }
 
 .team__about_person_name {
     font-weight: 900;
     margin-top: 50px;
     color: #2B2E34;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .team__about_person_position {
@@ -2687,16 +2711,16 @@ header {
     font-style: italic;
     color: #2B2E34;
     margin-top: 5px;
-    font-size: 20px;   
+    font-size: 16px;   
 }
 
 .team__about_person_text {
     color: #2B2E34;
     margin-top: 30px;
     font-weight: normal;
-    width: 292px;
+    width: 265px;
     line-height: 1.3;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 
@@ -2710,7 +2734,7 @@ header {
     }
     
     .block__darkgrey_small {
-        right: 29px;
+        right: 2px;
     }
     
     .team__person_img_holder {
@@ -2948,7 +2972,7 @@ header {
 
 .contact__content_block {
     background-color: #707070;
-    padding: 40px 100px 40px 40px;
+    padding: 40px 100px 100px 40px;
     width: 45%;
     position: absolute;
     right: -170px;
@@ -2964,7 +2988,7 @@ header {
     height: 60px;
     background-color: #F3E8DE;
     position: absolute;
-    top: 102px;
+    top: 122px;
     right: 0;
 }
 
@@ -3041,7 +3065,9 @@ header {
 .contact__map_text {
     color: #696969;
     font-size: 13px;
+    margin-top: 30px;
     line-height: 1.4;
+    width: 210px;
 }
 
 .contact__map_green_holder {
@@ -3249,7 +3275,7 @@ header {
         height: 30px;
         background-color: #ADA59D;
         position: absolute;
-        top: 178px;
+        top: 311px;
         right: 0;
     }
     
