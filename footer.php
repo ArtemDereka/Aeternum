@@ -24,4 +24,5 @@
         </div>
     </div>
 </footer>
-<script src="/js/main.js"></script>
+<!-- <script src="/js/main.js"></script> -->
+<?php wp_footer(); ?>
