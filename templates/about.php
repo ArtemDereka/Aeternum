@@ -1,3 +1,11 @@
+
+<!-- 
+    Страница о компании. 
+    Находясь на ней пользователь может узнать главное о компании и инвестиционном процессе. 
+-->
+
+
+
 <?php
 /*
 Template Name: About Aeternum
@@ -12,9 +20,9 @@ Template Name: About Aeternum
     <main class="about">
         <section class="about__capital">
             <div class="about__capital_content">
-                <h2 class="about__capital_name"><?php echo get_theme_mod('about__capital_name'); ?></h2>
+                <h2 class="about__capital_name"><?= get_theme_mod('about__capital_name'); ?></h2>
                 <p class="about__capital_text">
-                    <?php echo get_theme_mod('about__capital_text'); ?>
+                    <?= get_theme_mod('about__capital_text'); ?>
                 </p>
             </div>
             <div class="about__capital_grey_holder">
@@ -29,9 +37,9 @@ Template Name: About Aeternum
         <section class="about__process">
             <div class="about__process_img">
                 <div class="about__process_block">
-                    <h2 class="about__process_name"><?php echo get_theme_mod('about__process_name'); ?></h2>
+                    <h2 class="about__process_name"><?= get_theme_mod('about__process_name'); ?></h2>
                     <p class="about__process_text">
-                        <?php echo get_theme_mod('about__process_text'); ?>
+                        <?= get_theme_mod('about__process_text'); ?>
                         <div class="about__process__white"></div>
                     </p>
                 </div>
@@ -39,9 +47,9 @@ Template Name: About Aeternum
         </section>
         <section class="about__sectors container">
             <div class="about__sectors_content">
-                <h2 class="about__sectors_name"><?php echo get_theme_mod('about__sectors_name'); ?></h2>
+                <h2 class="about__sectors_name"><?= get_theme_mod('about__sectors_name'); ?></h2>
                 <p class="about__sectors_text">
-                    <?php echo get_theme_mod('about__sectors_text'); ?>
+                    <?= get_theme_mod('about__sectors_text'); ?>
                 </p>
             </div>
             <div class="about__sectors_img">

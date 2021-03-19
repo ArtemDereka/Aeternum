@@ -5,10 +5,9 @@ function strategy_assets() {
 
     wp_enqueue_style( 'reset_css', get_template_directory_uri() . '/assets/styles/reset.css');
 
-    wp_enqueue_script( 'customizer-control_js', get_template_directory_uri() . '/assets/js/customizer-control.js', array(), '20151215', true );
-    wp_enqueue_script( 'customizer-preview_js', get_template_directory_uri() . '/assets/js/customizer-preview.js', array(), '20151215', true );
+   
     wp_enqueue_script( 'main_js', get_template_directory_uri() . '/assets/js/main.js', array(), '20151215', true );
-    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.js', array(), '20151215', true );
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/libraries/jquery/jquery.js', array(), '20151215', true );
 }
 
 add_action( 'wp_enqueue_scripts', 'strategy_assets' );
