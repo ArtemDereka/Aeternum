@@ -27,38 +27,36 @@ function admin_panel_setting($wp_customize)
     );
 
     $wp_customize->add_setting(
-        'home_header_title',
+        'home__welcome_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet',
             'transport' => 'postMessage',
         )
     );
     $wp_customize->add_control(
         new WP_Customize_Control(
-            $wp_customize, 'home_header_title', array(
+            $wp_customize, 'home__welcome_name', array(
                 'label' => 'Header Title', 'aletheme',
                 'section' => 'home',
-                'setting' => 'home_header_title',
+                'setting' => 'home__welcome_name',
                 'type' => 'input',
             )
         )
     );
 
-    $home_header_title = 'home_header_title';
-    $wp_customize->selective_refresh->add_partial($home_header_title, array(
-        'selector' => '.home_header_title', 
-        'render_callback' => function() use ($home_header_title) {
-            return nl2br(esc_html(get_theme_mod($home_header_title)));
+    $home__welcome_name = 'home__welcome_name';
+    $wp_customize->selective_refresh->add_partial($home__welcome_name, array(
+        'selector' => '.home__welcome_name', 
+        'render_callback' => function() use ($home__welcome_name) {
+            return nl2br(esc_html(get_theme_mod($home__welcome_name)));
         }
     ));
-
-
 
 
     $wp_customize->add_setting(
         'home__welcome_block_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -85,7 +83,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__welcome_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ',
             'transport' => 'postMessage',
         )
     );
@@ -112,7 +110,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__welcome_link',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -139,7 +137,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__icons_text1',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur',
             'transport' => 'postMessage',
         )
     );
@@ -166,7 +164,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__icons_text2',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur',
             'transport' => 'postMessage',
         )
     );
@@ -193,7 +191,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__icons_text3',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur',
             'transport' => 'postMessage',
         )
     );
@@ -220,7 +218,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__icons_text4',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur',
             'transport' => 'postMessage',
         )
     );
@@ -247,7 +245,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__content_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -274,7 +272,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__content_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             'transport' => 'postMessage',
         )
     );
@@ -301,7 +299,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'home__hieroglyphs_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
             'transport' => 'postMessage',
         )
     );
@@ -337,7 +335,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'about__capital_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor ',
             'transport' => 'postMessage',
         )
     );
@@ -364,7 +362,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'about__capital_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'transport' => 'postMessage',
         )
     );
@@ -391,7 +389,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'about__process_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit',
             'transport' => 'postMessage',
         )
     );
@@ -418,7 +416,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'about__process_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'transport' => 'postMessage',
         )
     );
@@ -445,7 +443,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'about__sectors_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit',
             'transport' => 'postMessage',
         )
     );
@@ -472,7 +470,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'about__sectors_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'transport' => 'postMessage',
         )
     );
@@ -509,7 +507,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__ownership_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -536,7 +534,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__ownership_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'transport' => 'postMessage',
         )
     );
@@ -563,7 +561,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__philosophy_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -590,7 +588,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__philosophy_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'transport' => 'postMessage',
         )
     );
@@ -617,7 +615,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__strategy_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor ',
             'transport' => 'postMessage',
         )
     );
@@ -644,7 +642,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__strategy_text1',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -671,7 +669,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__strategy_text2',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -698,7 +696,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__strategy_text3',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -725,7 +723,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__strategy_text4',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -752,7 +750,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__strategy_text5',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -779,7 +777,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__strategy_text6',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -806,7 +804,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__board_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -833,7 +831,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__board_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
             'transport' => 'postMessage',
         )
     );
@@ -860,7 +858,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -887,7 +885,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_text1',
         array(
-            'default' => '',
+            'default' => 'Lorem',
             'transport' => 'postMessage',
         )
     );
@@ -913,7 +911,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_text2',
         array(
-            'default' => '',
+            'default' => 'Lorem',
             'transport' => 'postMessage',
         )
     );
@@ -940,7 +938,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_text3',
         array(
-            'default' => '',
+            'default' => 'Lorem',
             'transport' => 'postMessage',
         )
     );
@@ -967,7 +965,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_text4',
         array(
-            'default' => '',
+            'default' => 'Lorem',
             'transport' => 'postMessage',
         )
     );
@@ -994,7 +992,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_namePrivat',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -1021,7 +1019,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_textPrivat1',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1048,7 +1046,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_textPrivat2',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1075,7 +1073,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'active__focus_textPrivat3',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1111,7 +1109,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__contact_txt',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet',
             'transport' => 'postMessage',
         )
     );
@@ -1138,7 +1136,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__contact_why',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore',
             'transport' => 'postMessage',
         )
     );
@@ -1165,7 +1163,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__contact_btn',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum ',
             'transport' => 'postMessage',
         )
     );
@@ -1192,7 +1190,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum ',
             'transport' => 'postMessage',
         )
     );
@@ -1219,7 +1217,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_1person_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum ',
             'transport' => 'postMessage',
         )
     );
@@ -1246,7 +1244,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_1person_position',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum ',
             'transport' => 'postMessage',
         )
     );
@@ -1273,7 +1271,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_1person_text1',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum',
             'transport' => 'postMessage',
         )
     );
@@ -1300,7 +1298,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_1person_text2',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum',
             'transport' => 'postMessage',
         )
     );
@@ -1327,7 +1325,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_1person_text3',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum',
             'transport' => 'postMessage',
         )
     );
@@ -1354,7 +1352,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_2person_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1381,7 +1379,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_2person_position',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1407,7 +1405,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_3person_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1434,7 +1432,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_3person_position',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1461,7 +1459,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_3person_text1',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum',
             'transport' => 'postMessage',
         )
     );
@@ -1488,7 +1486,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'team__about_3person_text2',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum',
             'transport' => 'postMessage',
         )
     );
@@ -1524,7 +1522,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__content_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1550,7 +1548,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__content_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
             'transport' => 'postMessage',
         )
     );
@@ -1577,7 +1575,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__connection_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor sit',
             'transport' => 'postMessage',
         )
     );
@@ -1604,7 +1602,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__connection_1person_mail',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum ',
             'transport' => 'postMessage',
         )
     );
@@ -1631,7 +1629,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__connection_1person_phone',
         array(
-            'default' => '',
+            'default' => '123456789',
             'transport' => 'postMessage',
         )
     );
@@ -1658,7 +1656,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__connection_2person_mail',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum ',
             'transport' => 'postMessage',
         )
     );
@@ -1685,7 +1683,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__connection_2person_phone',
         array(
-            'default' => '',
+            'default' => '123456789',
             'transport' => 'postMessage',
         )
     );
@@ -1712,7 +1710,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__connection_3person_mail',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum',
             'transport' => 'postMessage',
         )
     );
@@ -1739,7 +1737,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__connection_3person_phone',
         array(
-            'default' => '',
+            'default' => '123456789',
             'transport' => 'postMessage',
         )
     );
@@ -1766,7 +1764,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__map_name',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -1793,7 +1791,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__map_text',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );
@@ -1820,7 +1818,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__map_office',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolorv',
             'transport' => 'postMessage',
         )
     );
@@ -1847,7 +1845,7 @@ function admin_panel_setting($wp_customize)
     $wp_customize->add_setting(
         'contact__map_location',
         array(
-            'default' => '',
+            'default' => 'Lorem ipsum dolor',
             'transport' => 'postMessage',
         )
     );

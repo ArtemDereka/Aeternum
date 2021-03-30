@@ -1,7 +1,7 @@
 
 <!-- 
-    Страница о компании. 
-    Находясь на ней пользователь может узнать главное о компании и инвестиционном процессе. 
+    This page about company. 
+    User can discover about company and investment process.
 -->
 
 
@@ -17,6 +17,15 @@ Template Name: About Aeternum
     get_header();
 
 ?>
+    <style>
+        .about__process_img {
+            background-image: url(<?= get_stylesheet_directory_uri(); ?>/assets/images/floor.png);
+        }
+        .about__sectors_img {
+            background-image: url(<?= get_stylesheet_directory_uri(); ?>/assets/images/cubes_pyramid.png);
+        }
+    </style>
+
     <main class="about">
         <section class="about__capital">
             <div class="about__capital_content">
@@ -29,7 +38,7 @@ Template Name: About Aeternum
                 <div class="about__capital_grey"></div>
                 <div class="about__capital_grey_Mobile"></div>
             </div>
-            <img src="/images/iStock-1250524373.png" alt="" class="about__capital_img">
+            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/3_white_cubes.png" alt="" class="about__capital_img">
         </section>
         <div class="about__beige_holder">
             <div class="block__beige"></div>

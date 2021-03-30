@@ -1,19 +1,34 @@
-Добавил все шаблоны в отдельную папку templates
+Added page templates to separate "templates" folder
 
-Добавил коментарии в каждый шаблон
+Added comments to each templates
 
-Там где динамическая информация возращаеться php кодом изменил все <?php echo на <?= 
+Where dynamic information is returned by php code changed all "<?php" echo to "<?="
 
-Минифицировал стили и js
+Minified styles and js
 
-Все var заменил на let
+Change "var" to "let"
 
-Добавил коментарии в js код
+Added comments to js code
 
-Библиотеки вынес в отдельную папку
+Moved libraries to separate folder  
 
 Дал всем картинкам нормальное название на английском и без пробелов
 
-Изменил название папки дял svg, с icons на svg
+Changed svg folder name, from "icons" to "svg"
 
-Удалил два файла customizer.js, так как они не использовались
+Deleted two files of customizer.js
+
+
+Fixed images
+
+Fixed fonts
+
+Fised bug on Header Title
+
+Changed theme scrinshot 
+
+ReWrote all comments to English
+
+Wrote default text on theme
+
+

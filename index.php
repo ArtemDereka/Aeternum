@@ -1,8 +1,8 @@
 
 <!-- 
-    Главная страница ссайта. 
-    Пользоатель попадает на неё при входе на ссайт. 
-    На этой странице пользователь может в краци узнать о миссии компании и её главных плюсах.
+    Main company page. 
+    User see this page when entering the site.
+    User can discover about mission and pluses of company, here.
 -->
 
 
@@ -13,11 +13,22 @@ get_header();
 
 ?>
 
+<style>
+        .home__content_img {
+            background-image: url(<?= get_stylesheet_directory_uri(); ?>/assets/images/black_cubes.png);
+        }
+        .home__hieroglyphs_img {
+            background-image: url(<?= get_stylesheet_directory_uri(); ?>/assets/images/fog.png);
+        }
+        .home__welcome_img {
+            background-image: url(<?= get_stylesheet_directory_uri(); ?>/assets/images/beige_cubes.png);
+        }
+    </style>
 
 <main class="home">
     <section class="home__welcome">
         <div class="home__welcome_img">
-            <h2 class="home__welcome_name"><?= get_theme_mod('home_header_title'); ?></h2>
+            <h2 class="home__welcome_name"><?= get_theme_mod('home__welcome_name'); ?></h2>
         </div>
         <div class="home__welcome_part">
             <div class="home__welcome_block">

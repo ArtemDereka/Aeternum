@@ -1,9 +1,8 @@
 
 <!-- 
-    Страница о плюсах компании для пользователя.
-    На ней пользователь может узнать о пользе активного участия, о философии компании,
-    о стратегии создания ценностей и секторах фокуса.
-
+    Page about pluses for user.
+    Here, user can discover about: benefits of active participation, company philosophy, value 
+    creation strategy and focus sectors.
  -->
 
 
@@ -17,6 +16,10 @@ Template Name: Active Ownership
 <?php get_header(); ?>
 
 
+<style>
+    
+</style>
+
 <main class="active">
         <section class="active__ownership">
             <div class="active__ownership_content">
@@ -29,12 +32,12 @@ Template Name: Active Ownership
                 <div class="active__ownership_green"></div>
                 <div class="active__ownership_grey"></div>
             </div>
-            <img src="/images/iStock-1181830139.png" alt="" class="active__ownership_img">
+            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/cubes_stairss.png" alt="" class="active__ownership_img">
             <h2 class="active__ownership_name_Mobile"><?= get_theme_mod('active__ownership_name'); ?></h2>
         </section>
 
         <section class="active__philosophy">
-            <img src="/images/photo-1495975832350-f46e82f0ceb6.png" alt="" class="active__philosophy_img">
+            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/fog.png" alt="" class="active__philosophy_img">
             <div class="active__philosophy_grey_holder">
                 <div class="active__philosophy_grey"></div>
             </div>
@@ -98,7 +101,7 @@ Template Name: Active Ownership
         <section class="active__board">
             <div class="container">
                 <div class="active__board_holder">
-                    <img src="/images/iStock-948412860-Edit.png" alt="" class="active__board_img">
+                    <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/different_figures.png" alt="" class="active__board_img">
                     <div class="active__board_content">
                         <h2 class="active__board_name"><?= get_theme_mod('active__board_name'); ?></h2>
                         <p class="active__board_text">

@@ -1,5 +1,5 @@
-let menu=document.getElementById('menu') // Объявление блока с контентом для меню меню   
-let hamburger=document.getElementById('hamburger') // Объявление кнопки бургера    
-let close=document.getElementById('close') // Объявление кнопки закрытия меню (крестик)
-hamburger.addEventListener('click',function(){menu.classList.remove('display_none_Mobile')}) // Открытие меню при нажатии на кнопку бургера
-close.addEventListener('click',function(){menu.classList.add('display_none_Mobile')}) // Закрытие меню при нажатии на ктопку закрытия
+let menu=document.getElementById('menu') //  Setting a block with content for menu   
+let hamburger=document.getElementById('hamburger') // Setting the burger button   
+let close=document.getElementById('close') // Setting the menu close button
+hamburger.addEventListener('click',function(){menu.classList.remove('display_none_Mobile')}) // Opening the menu when you click the burger button
+close.addEventListener('click',function(){menu.classList.add('display_none_Mobile')}) // Closing the menu when you click the cross button

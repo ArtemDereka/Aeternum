@@ -1,8 +1,7 @@
 
 <!-- 
-    Страница с контактамию
-    На ней пользователь может узнать контактные данные сотрудников компании.
-    Также найти локацию компании.
+    Page with contacts.
+    User can discover contact information of company employees and location.
  -->
 
 
@@ -14,6 +13,12 @@ Template Name: Contact
 ?>
 
 <?php get_header(); ?>
+
+<style>
+    .contact__content_img {
+        background-image: url(<?= get_stylesheet_directory_uri(); ?>/assets/images/roof.png);
+    }
+</style>
 
 
 <main class="contact">
@@ -40,7 +45,7 @@ Template Name: Contact
                     <div class="team__about_person">
                         <div class="team__person_img_holder">
                             <div class="block__green_small"></div>
-                            <img src="/images/Vegard Soeraunet_0010.png" alt="" class="team__person_img">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/avatar.png" alt="" class="team__person_img">
                         </div>
                         <h3 class="team__about_person_name team__about_1person_name"><?= get_theme_mod('team__about_1person_name'); ?></h3>
                         <p class="team__about_person_position team__about_1person_position"><?= get_theme_mod('team__about_1person_position'); ?></p>
@@ -52,7 +57,7 @@ Template Name: Contact
                     <div class="team__about_person">                   
                         <div class="team__person_img_holder">
                             <div class="block__grey_small"></div>
-                            <img src="/images/Vegard Soeraunet_0010.png" alt="" class="team__person_img">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/avatar.png" alt="" class="team__person_img">
                         </div>
                         <h3 class="team__about_person_name team__about_2person_name"><?= get_theme_mod('team__about_2person_name'); ?></h3>
                         <p class="team__about_person_position team__about_2person_position"><?= get_theme_mod('team__about_2person_position'); ?></p>
@@ -64,7 +69,7 @@ Template Name: Contact
                     <div class="team__about_person">
                         <div class="team__person_img_holder">
                             <div class="block__darkgrey_small"></div>
-                            <img src="/images/Vegard Soeraunet_0010.png" alt="" class="team__person_img">
+                            <img src="<?= get_stylesheet_directory_uri(); ?>/assets/images/avatar.png" alt="" class="team__person_img">
                         </div>
                         <h3 class="team__about_person_name team__about_3person_name"><?= get_theme_mod('team__about_3person_name'); ?></h3>
                         <p class="team__about_person_position team__about_3person_position"><?= get_theme_mod('team__about_3person_position'); ?></p>
